@@ -1,0 +1,9 @@
+---
+applications:
+- name: helloflask
+  buildpack: git://github.com/ephoning/heroku-buildpack-python.git
+  memory: 256M
+  instances: 1
+  host: helloflask-${random-word}
+  domain: cfapps.io
+  path: .
